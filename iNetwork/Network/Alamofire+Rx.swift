@@ -69,18 +69,16 @@ extension Data:HandyJSON{}
 
 
 
-enum APIStype {
+public enum APIStype {
     //手机号登录
     case login(phone:String,code:String)
     
     //code
     case getPhoneCode(phone:String)
     
-    //.......
+    //....... 更多请求。。。。
     
-    
-    
-    
+
     
     var path:String{
         get{
@@ -95,7 +93,6 @@ enum APIStype {
         }
     }
     
-    
     var params :[String:Any]{
         switch self {
         case .login(phone: let phone, code: let code ):
@@ -106,8 +103,6 @@ enum APIStype {
         }
       
     }
-  
-    
     
     var  method: Alamofire.HTTPMethod{
         switch self {
