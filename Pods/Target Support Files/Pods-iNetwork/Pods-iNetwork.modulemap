@@ -1,0 +1,6 @@
+framework module Pods_iNetwork {
+  umbrella header "Pods-iNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}
