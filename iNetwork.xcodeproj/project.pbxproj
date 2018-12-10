@@ -15,7 +15,7 @@
 		E1306A4E21BE511A00C3F859 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1306A4C21BE511A00C3F859 /* LaunchScreen.storyboard */; };
 		E1306A5921BE511B00C3F859 /* iNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306A5821BE511B00C3F859 /* iNetworkTests.swift */; };
 		E1306A6421BE511B00C3F859 /* iNetworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306A6321BE511B00C3F859 /* iNetworkUITests.swift */; };
-		E1306A7521BE542600C3F859 /* Alamofire+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306A7421BE542600C3F859 /* Alamofire+Rx.swift */; };
+		E1306A7921BE69F800C3F859 /* Alamofire+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1306A7821BE69F800C3F859 /* Alamofire+Rx.swift */; };
 		EC9017369BD7C1C6CF93FA7A /* Pods_iNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B814EC00BCFCEF7454DF9F /* Pods_iNetwork.framework */; };
 		F81A712513DF9907BB694ED6 /* Pods_iNetworkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D4E5BBE49545B3BB381B7D2 /* Pods_iNetworkUITests.framework */; };
 /* End PBXBuildFile section */
@@ -59,7 +59,7 @@
 		E1306A5F21BE511B00C3F859 /* iNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1306A6321BE511B00C3F859 /* iNetworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iNetworkUITests.swift; sourceTree = "<group>"; };
 		E1306A6521BE511B00C3F859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1306A7421BE542600C3F859 /* Alamofire+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire+Rx.swift"; sourceTree = "<group>"; };
+		E1306A7821BE69F800C3F859 /* Alamofire+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire+Rx.swift"; sourceTree = "<group>"; };
 		FBC49DFA8CC3D5984C93C76D /* Pods-iNetworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iNetworkTests.debug.xcconfig"; path = "Target Support Files/Pods-iNetworkTests/Pods-iNetworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,7 +171,7 @@
 		E1306A7121BE52D300C3F859 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				E1306A7421BE542600C3F859 /* Alamofire+Rx.swift */,
+				E1306A7821BE69F800C3F859 /* Alamofire+Rx.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -416,7 +416,7 @@
 			files = (
 				E1306A4621BE511900C3F859 /* ViewController.swift in Sources */,
 				E1306A4421BE511900C3F859 /* AppDelegate.swift in Sources */,
-				E1306A7521BE542600C3F859 /* Alamofire+Rx.swift in Sources */,
+				E1306A7921BE69F800C3F859 /* Alamofire+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

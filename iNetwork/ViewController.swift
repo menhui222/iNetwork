@@ -14,7 +14,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let _ =  iNetWork.request(API: APIStype.login(phone: "10086100861", code: "11020")).responseJSON().parseToObejct(type:User.self).subscribe(onNext: { (user) in
+        let _ =  iNetWork.request(API: APIStype.login(phone: "10086100861", code: "11020"))
+            .responseJSON()
+            .parseToObejct(type:User.self)
+            .subscribe(onNext: { (user) in
             
         }, onError: { (error) in
             
@@ -24,7 +27,10 @@ class ViewController: UIViewController {
         
         
         
-        let o = iNetWork.request(API: APIStype.getPhoneCode(phone: "15990013156")).responseJSON().parseToObejct(type: User.self).subscribe { (event) in
+        let o = iNetWork.request(API: APIStype
+            .getPhoneCode(phone: "15990013156"))
+            .responseJSON().parseToObejct(type: User.self)
+            .subscribe { (event) in
             switch event{
             case .next( let user):
                 print(user)
@@ -35,7 +41,7 @@ class ViewController: UIViewController {
                 print(error.massage)
             }
         }
-        
+        //销毁
         o.dispose()
     }
 
@@ -43,5 +49,8 @@ class ViewController: UIViewController {
 }
 
 struct User:HandyJSON {
+    
+}
+extension String :HandyJSON{
     
 }
